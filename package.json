@@ -1,6 +1,6 @@
 {
   "name": "validate.io-contains",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Validates if an array contains an input value.",
   "author": {
     "name": "Athan Reines",
