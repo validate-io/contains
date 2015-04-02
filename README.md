@@ -1,4 +1,4 @@
-contains
+Contains
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,41 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-contains' );
+var contains = require( 'validate.io-contains' );
 ```
 
-#### foo( value )
+#### contains( arr, value )
 
-What does this function do?
+Validates if an `array` contains an input `value`.
+
+``` javascript
+var arr = [ 1, '2', 3 ];
+
+var bool = contains( arr, '2' );
+// returns true
+
+bool = contains( arr, 2 );
+// returns false
+```
+
+__Note__: if not provided an `array`, the function will throw an `Error`.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-contains' );
+var contains = require( 'validate.io-contains' );
+
+var arr = [ 1, '2', NaN, null, {} ];
+
+console.log( contains( arr, '2' ) );
+// returns true
+
+console.log( contains( arr, NaN ) );
+// returns true
+
+console.log( contains( arr, 2 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

@@ -26,12 +26,20 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "array",
+    "contains",
+    "is",
+    "in"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/contains/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array": "^1.0.3",
+    "validate.io-nan-primitive": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",
